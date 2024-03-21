@@ -1,0 +1,65 @@
+<!-- Q.7 How can you use Bootstrap to make thumbnails?
+
+-- In Bootstrap, you can use the .card component to create thumbnails or image cards. Here's a basic example of how to create thumbnails using Bootstrap: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Thumbnails</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Optional custom styles */
+    .thumbnail-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Bootstrap Thumbnails</h2>
+  <div class="thumbnail-container">
+    <div class="card" style="width: 18rem;">
+      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Thumbnail Image">
+      <div class="card-body">
+        <h5 class="card-title">Thumbnail 1</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Thumbnail Image">
+      <div class="card-body">
+        <h5 class="card-title">Thumbnail 2</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- -- In this example:
+
+-- We use the .card component to create each thumbnail.
+-- Inside each .card, we have an <img> tag for the thumbnail image, followed by a .card-body containing the title, description, and a button.
+-- The .thumbnail-container class is a custom style to create a flexbox layout for the thumbnails, arranging them in a row with some spacing.
+
+-- You can customize the content, styles, and layout according to your requirements. Additionally, Bootstrap provides various classes and components to enhance and customize thumbnails further, such as adding borders, captions, and hover effects. -->
+
